@@ -1,0 +1,558 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    display: flex;                  /* Usar Flexbox para layout */
+    align-items: center;           /* Alinhar verticalmente ao centro */
+    padding: 0px;                 /* Espaçamento interno do header */
+    background-color: #f7f7f7;
+}
+
+
+
+.imagem {
+    max-width: 100px;              /* Limitar o tamanho da imagem */
+    margin-right: 15px;            /* Espaçamento à direita da imagem */
+}
+
+.logo {
+    font-size: 28px;               /* Tamanho da fonte do logo */
+    margin-right: auto;            /* Usar auto para empurrar os itens à direita */
+}
+
+
+
+
+
+nav {
+    display: flex;                  /* Usar Flexbox para os links */
+    margin-right: 10px;            /* Espaçamento à direita dos links de navegação */
+    color: black;
+}
+
+nav a {
+    margin: 0 20px;                /* Espaçamento entre os links */
+    text-decoration: none;          /* Remover sublinhado dos links */
+    color: black;
+}
+
+
+
+
+
+
+.search {
+    display: flex;                  /* Usar Flexbox para o campo de busca */
+    align-items: center;           /* Alinhar verticalmente ao centro */
+}
+
+.search label {
+    margin-right: 5px;             /* Espaçamento à direita do label */
+}
+
+
+.banners {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.banner {
+    background-color: #ddd;
+    padding: 5px;
+    width: 5%;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+
+.main-paginas {
+    display: flex;
+    padding: 0px;
+    
+}
+
+/* MENU DE CURSOS */
+
+ul {
+    padding:0;
+    margin:0px;
+}
+
+li {
+    padding:0 10px;
+    margin:0px;
+}
+
+.menu-cursos {
+    padding:0 10px;
+    margin:0px;
+    border-bottom: 1px solid #fff;
+}
+
+
+.menu {
+    width: 20%;
+    background-color: #eaeaea;
+    color: #111;
+    padding: 0px;
+}
+
+.menu h2 {
+    font-size: 18px;
+    padding:10px 10px;
+    margin:0px;
+    background: #000;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+.content {
+    width: 75%;
+    margin-left: 20px;
+}
+
+.content .intro {
+    padding: 0px 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.intro h2 {
+    font-size: 28px;              /* Tamanho da fonte do título */
+    margin-bottom: 20px;          /* Espaço abaixo do título */
+    color: #333333;               /* Cor do texto */
+    text-align: left;           /* Centralizar o título */
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.titulo {
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course {
+    background-color: #fff;
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course h3 {
+    margin: 10px 0;
+}
+
+.course-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.course-button:hover {
+    background-color: darkorange;
+}
+
+.video-container {
+    width: 100%; /* Faz o contêiner ocupar 100% da largura do seu espaço pai */
+    max-width: 900px; /* Define um tamanho máximo para o vídeo */
+    aspect-ratio: 16 / 9; /* Mantém a proporção 16:9 do vídeo */
+
+}
+
+.video-container iframe {
+    width: 100%; /* O vídeo ocupará toda a largura do contêiner */
+    height: 100%; /* Ajuste automático de altura para manter a proporção */
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #ccc;
+    width:100%;
+    margin-top:20px;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+   
+}
+
+.redes-sociais {
+    width:10%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.menu-footer {
+    width:90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-footer a {
+    margin: 0px 20px;
+}
+
+.fa-brands {
+    margin: 0px 10px;
+}
+
+
+
+
+/* Course */
+
+
+.course-image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+/* Estilos do Carrossel */
+.carousel-container {
+    overflow: hidden;
+    width: 100%;                     /* Ajustar para 100% para ocupar toda a largura */
+    max-width: 100%;               /* Define um tamanho máximo para o carrossel */
+    margin: auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.9s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 calc(100% / 3);       /* Define a largura de cada slide para que três fiquem visíveis ao mesmo tempo */
+    box-sizing: border-box;
+    margin: 0;                      /* Remove a margem entre os slides */
+    padding: 0;                     /* Remove o padding se houver */
+}
+
+.carousel-slide img {
+    height: 300px;                   /* Mantém a proporção da imagem */
+    display: block;                 /* Remove espaços abaixo da imagem */
+    margin: center;                   /* Centraliza a imagem no slide */
+}
+
+
+/* PÁGINAS */
+
+.about-section {
+    max-width: auto;             /* Limitar a largura máxima da seção para melhorar a legibilidade */
+    margin: 0px auto;            /* Centralizar a seção horizontalmente e dar uma margem vertical */
+    padding: 40px 40px;                /* Adicionar espaçamento interno */
+    background-color:#fff;    /* Cor de fundo branco para contraste */
+    text-align: left;
+    width:100%;
+}
+
+.about-section h2 {
+    font-size: 28px;              /* Tamanho da fonte do título */
+    margin-bottom: 20px;          /* Espaço abaixo do título */
+    color: #333333;               /* Cor do texto */
+    text-align: left;           /* Centralizar o título */
+    border-bottom: 1px solid #bdbdbd;
+}
+
+
+
+.about-section p {
+    font-size: 18px;              /* Tamanho da fonte do parágrafo */
+    line-height: 1.8;             /* Altura da linha para melhor legibilidade */
+    color: #555555;               /* Cor do texto para contraste suave */
+    margin-bottom: 15px;          /* Espaço entre os parágrafos */
+    text-align: justify;          /* Justificar o texto para visual mais alinhado */
+}
+
+
+/* PERGUNTAS FREQUENTES */
+
+.faq-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    background: #e4e3e3;
+    color: #333;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question span {
+    font-size: 18px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question span {
+    transform: rotate(90deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 0 15px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding: 15px;
+}
+
+
+/* certificados.css */
+.certificado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.certificado-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* PÁGINA DE CONTATO */
+
+.contact-container {
+    width: 100%;
+    
+}
+
+.contact-info, .contact-hours, .contact-form, .contact-map, .contact-social, .contact-extra {
+    margin-bottom: 20px;
+}
+
+.contact-info p, .contact-hours p, .contact-extra p {
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 8px 0px;
+    font-weight: bold;
+    width: 12%;
+    text-align: right;
+    vertical-align: top;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    float: right;
+    
+}
+
+.contact-form button:hover {
+    background-color: darkorange;
+}
+
+.contact-social a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #3a3a3a;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-social a:hover {
+    color: #005ea6;
+}
+
+.contact-map iframe {
+    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+}
+
+.contact-extra a {
+    color: #007acc;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.contact-extra a:hover {
+    color: #005ea6;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/* PÁGINA DE AVALIAÇÕES */
+
+.reviews-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.review-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review-details {
+    flex: 1;
+}
+
+.review-details h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.review-rating {
+    display: flex;
+    margin: 5px 0;
+}
+
+.star {
+    font-size: 20px;
+    color: #FFD700; /* Amarelo dourado */
+}
+
+.star.gray {
+    color: #ccc; /* Cor para estrelas não preenchidas */
+}
+
+.review-details p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+

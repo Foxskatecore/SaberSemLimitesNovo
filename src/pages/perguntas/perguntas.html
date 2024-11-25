@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas Frequentes</title>
+    <link rel="stylesheet" href="/public/css/fonts.css"/>
+    <link rel="stylesheet" href="/public/css/global.css"/>
+    <link rel="stylesheet" href="../../../style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css" integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/public/assests/fonts/diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <img class="imagem" src="../../../public/assests/images/logo.png">
+        <div class="logo">Saber Sem Idade</div>
+        <nav>
+            <a href="../../../index.html">Inicio</a>
+            <p>|</p>
+            <a href="../../../src/pages/quemsomos/somos.html">Quem Somos?</a>
+            <p>|</p>
+            <a href="../../../src/pages/certificado/certificados.html">Certificados</a>
+            <p>|</p>
+            <a href="../../../src/pages/fale/faleconosco.html">Fale Conosco</a>
+            <p>|</p>
+            <a href="../../../src/pages/cadastro/cadastro.html">Cadastre-se</a>
+        </nav>
+    </header>
+
+    <main class="main-paginas">
+        <section class="about-section">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <button class="faq-question">O que é o Saber Sem Idade? <span>&#9654;</span></button>
+                <div class="faq-answer">
+                    <p>O Saber Sem Idade é uma plataforma voltada para ensinar pessoas da terceira idade a usarem tecnologia e internet de forma acessível e fácil.</p>
+                </div>
+            </div>
+        
+            <div class="faq-item">
+                <button class="faq-question">Quais cursos estão disponíveis? <span>&#9654;</span></button>
+                <div class="faq-answer">
+                    <p>Oferecemos cursos de informática básica, navegação na internet, redes sociais, e-mail, e muito mais!</p>
+                </div>
+            </div>
+        
+            <div class="faq-item">
+                <button class="faq-question">Como faço para me inscrever? <span>&#9654;</span></button>
+                <div class="faq-answer">
+                    <p>Você pode se inscrever diretamente em nosso site, clicando na aba "Cadastre-se" e preenchendo o formulário com seus dados.</p>
+                </div>
+            </div>
+        
+            <div class="faq-item">
+                <button class="faq-question">Há suporte para dúvidas? <span>&#9654;</span></button>
+                <div class="faq-answer">
+                    <p>Sim! Nossa equipe está disponível para ajudar por meio do Fale Conosco, acessível também no site.</p>
+                </div>
+            </div>
+
+        </section>
+    
+    </main>
+    
+ 
+    <script src="script.js"></script>
+    </body>
+    </html>
+    
+        <!-- Rodapé -->
+        <footer>
+            <div class="redes-sociais">
+                <a href="https://www.tiktok.com/" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>        
+            <div class="menu-footer">
+                <a href="../../../src/pages/avaliacao/avaliacoes.html">Avaliações</a>
+                <p>|</p>
+                <a href="../../../src/pages/perguntas/perguntas.html">Perguntas Frequentes</a>
+                <p>|</p>
+                <a href="../../../src/pages/contato/contato.html">Informações de Contato</a>
+                <p>|</p>
+                <a href="../../../src/pages/termos/termos.html">Termos de Uso e Política de Privacidade</a>
+            </div>  
+        </footer>
+
+</html>
+
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+        const question = item.querySelector(".faq-question");
+
+        question.addEventListener("click", () => {
+            item.classList.toggle("active");
+        });
+    });
+});
+
+</script>

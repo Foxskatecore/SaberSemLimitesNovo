@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="/public/css/fonts.css"/>
+    <link rel="stylesheet" href="/public/css/global.css"/>
+    <link rel="stylesheet" href="../../../style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css" integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/public/assests/fonts/diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <img class="imagem" src="../../../public/assests/images/logo.png">
+        <div class="logo">Saber Sem Idade</div>
+        <nav>
+            <a href="../../../index.html">Inicio</a>
+            <p>|</p>
+            <a href="../../../src/pages/quemsomos/somos.html">Quem Somos?</a>
+            <p>|</p>
+            <a href="../../../src/pages/certificado/certificados.html">Certificados</a>
+            <p>|</p>
+            <a href="../../../src/pages/fale/faleconosco.html">Fale Conosco</a>
+            <p>|</p>
+            <a href="../../../src/pages/cadastro/cadastro.html">Cadastre-se</a>
+        </nav>
+
+    </header>
+
+    <main class="main-paginas">
+        <section class="about-section">
+            <div class="contact-form">
+                <h2>Fale Conosco</h2>
+                <form>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="age">Idade:</label>
+                    <input type="number" id="age" name="age" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Celular:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="message">Comentário:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <div></div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+    
+        </section>   
+    </main> 
+    
+    <!-- Rodapé -->
+    <footer>
+        <div class="redes-sociais">
+            <a href="https://www.tiktok.com/" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>        
+        <div class="menu-footer">
+            <a href="../../../src/pages/avaliacao/avaliacoes.html">Avaliações</a>
+            <p>|</p>
+            <a href="../../../src/pages/perguntas/perguntas.html">Perguntas Frequentes</a>
+            <p>|</p>
+            <a href="../../../src/pages/contato/contato.html">Informações de Contato</a>
+            <p>|</p>
+            <a href="../../../src/pages/termos/termos.html">Termos de Uso e Política de Privacidade</a>
+        </div>  
+    </footer>
+</body>
+
+
+ <!-- JavaScript para exibir a mensagem de sucesso -->
+ <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Comentário enviado com sucesso!");
+        this.reset(); // Limpa o formulário após o envio
+    });
+</script>
+</body>
+</html>
+
+
